@@ -1,5 +1,6 @@
 
 export default function initHomepage(){
+    const div = document.createElement("div");
     const splashDiv = document.createElement("div");
     splashDiv.classList.add("splash");
 
@@ -26,9 +27,12 @@ export default function initHomepage(){
         <h2 class="text-center" id="subtitle">Connect On a Deeper Level</h2>
         <p class="text-center" id="home-description">Entwine yourself with the earth and experience the purity of raw dining. All our foods are grown and picked fresh daily from our garden. Nothing is washed, peeled, or prepared. Take off your shoes, ground yourself, and enjoy the amazing simplicity of all Mother Nature has to offer.</p>`;
 
+        
+        div.appendChild(splashDiv);
+        div.appendChild(subtitleH2);
+        div.appendChild(descP);
+        
         const contentDiv = document.querySelector("#content");
-        contentDiv.appendChild(splashDiv);
-        contentDiv.appendChild(subtitleH2);
-        contentDiv.appendChild(descP);
+        contentDiv.appendChild(div);
 }
 

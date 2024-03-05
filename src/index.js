@@ -1,4 +1,5 @@
 console.log("loaded index.js");
+import './style.css';
 import initHomepage from "./homepage";
 
 const contentDiv = document.querySelector("#content");
