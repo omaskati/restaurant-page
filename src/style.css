@@ -1,6 +1,10 @@
 body{
     width: 100vw;
 }
+ul,li{
+    margin: 0;
+    padding: 0;
+}
 header{
     width: 100%;
     display: grid;
@@ -9,6 +13,7 @@ header{
 
 nav{
     display: flex;
+    justify-content: space-around;
 }
 
 #content .splash{
@@ -28,4 +33,8 @@ nav{
 
 .text-center{
     text-align: center;
+}
+
+.menu-list > li{
+    list-style-type: none;
 }
