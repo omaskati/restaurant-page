@@ -1,5 +1,4 @@
 body{
-    width: 100vw;
 }
 ul,li{
     margin: 0;
@@ -37,4 +36,41 @@ nav{
 
 .menu-list > li{
     list-style-type: none;
+}
+
+.contact-grid{
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 5fr;
+}
+
+.contact-grid .heading{
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.contact-grid img{
+    max-height: 350px;
+}
+
+.grid{
+    display: grid;
+    justify-items: center;
+    grid-auto-rows: auto;
+}
+
+.grid-item--align-center{
+    align-self:center;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.italic{
+    font-style: italic;
 }
