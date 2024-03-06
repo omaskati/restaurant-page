@@ -1,6 +1,7 @@
 console.log("loaded index.js");
 import './style.css';
 import initHomepage from "./homepage";
+import initMenu from './menu';
 
 const contentDiv = document.querySelector("#content");
 const navBtns = document.querySelectorAll(".nav-btn");
@@ -27,6 +28,7 @@ function loadPage(page){
                 break;
             case 'menu':
                 console.log("Menu");
+                initMenu();
                 break;
             case 'contact':
                 console.log("Contact");
